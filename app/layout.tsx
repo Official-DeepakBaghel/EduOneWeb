@@ -31,8 +31,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Intruder Alert | NFT Marketplace",
-  description: "The #1 NFT Marketplace for Artists, Buyers & Sellers",
+  title: "EduOne | Digital Campus",
+  description: "The #1 Digital Campus for Students",
 };
 
 import Navigationbar from "@/components/navigationbar";

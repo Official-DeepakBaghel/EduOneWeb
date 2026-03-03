@@ -17,9 +17,9 @@ const Navigationbar = () => {
 
     const navLinks = [
         { name: 'About', href: '#' },
-        { name: 'Marketplace', href: '#' },
-        { name: 'For Artists', href: '#' },
-        { name: 'Exhibitions', href: '#' },
+        { name: 'GetApk', href: '#' },
+        { name: 'For Students', href: '#' },
+        { name: 'For Teachers', href: '#' },
     ];
 
     return (

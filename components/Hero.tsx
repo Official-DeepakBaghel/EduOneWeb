@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Target } from 'lucide-react';
+import { ArrowRight, Zap, Target, Download } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -83,7 +83,7 @@ const Hero = () => {
                     <div className="flex flex-wrap items-center gap-6 mt-12">
                         <button className="group relative px-8 py-4 bg-cyan-400 text-black font-orbitron font-black text-sm tracking-wide overflow-hidden hover:scale-105 transition-all shadow-[0_0_20px_rgba(0,255,242,0.4)] hover:shadow-[0_0_40px_rgba(0,255,242,0.6)] clip-path-slant">
                             <div className="absolute inset-0 bg-white/40 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-                            <span className="relative z-10 flex items-center gap-2 uppercase">Connect Wallet <Zap className="w-4 h-4 text-black fill-current" /></span>
+                            <span className="relative z-10 flex items-center gap-2 uppercase">Get Apk File <Download className="w-4 h-4 text-black fill-current" /></span>
                         </button>
 
                         <button className="flex items-center gap-3 text-cyan-300 font-orbitron font-bold text-sm hover:text-white transition-all group px-8 py-4 border border-cyan-500/30 hover:border-cyan-400 rounded-lg bg-cyan-950/30 hover:bg-cyan-900/40 backdrop-blur-sm shadow-[0_0_15px_rgba(0,255,242,0.1)] hover:shadow-[0_0_25px_rgba(0,255,242,0.2)]">

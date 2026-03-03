@@ -7,12 +7,12 @@ import { ArrowUpRight } from 'lucide-react';
 const categories = ["New Drops", "Most Viewed", "Bids", "Related"];
 
 const mockDrops = [
-    { title: "Meta Human", author: "@Neo", bid: "15.6 ETH", img: "👤", color: "#bd00ff" },
-    { title: "Cyber Pet", author: "@Techie", bid: "10.2 ETH", img: "🐕", color: "#00fff2" },
-    { title: "Holo Skull", author: "@Death", bid: "8.9 ETH", img: "💀", color: "#ff00bd" },
-    { title: "Glitch Art", author: "@Pixel", bid: "12.4 ETH", img: "👾", color: "#bd00ff" },
-    { title: "Dunker", author: "@Meta", bid: "25.0 ETH", img: "🧢", color: "#00fff2" },
-    { title: "Butterfly", author: "@Wings", bid: "18.1 ETH", img: "🦋", color: "#ff00bd" },
+    { title: "Meta Human", author: "@Neo", bid: "15.6 INR", img: "👤", color: "#bd00ff" },
+    { title: "Cyber Pet", author: "@Techie", bid: "10.2 INR", img: "🐕", color: "#00fff2" },
+    { title: "Holo Skull", author: "@Death", bid: "8.9 INR", img: "💀", color: "#ff00bd" },
+    { title: "Glitch Art", author: "@Pixel", bid: "Free", img: "👾", color: "#bd00ff" },
+    { title: "Dunker", author: "@Meta", bid: "25.0 Free", img: "🧢", color: "#00fff2" },
+    { title: "Butterfly", author: "@Wings", bid: "18.1 6.4 INR", img: "🦋", color: "#ff00bd" },
 ];
 
 const NewDrops = () => {
@@ -94,7 +94,7 @@ const NewDrops = () => {
 
                                 {/* Place Bid Button (appears/glows on hover) */}
                                 <button className="w-full mt-2 py-3 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-bold font-rajdhani rounded-xl group-hover:bg-cyan-500 group-hover:text-black transition-all shadow-[0_0_10px_rgba(0,255,242,0.1)] group-hover:shadow-[0_0_20px_rgba(0,255,242,0.4)]">
-                                    Place Bid
+                                    Get Apk
                                 </button>
                             </div>
                         </motion.div>

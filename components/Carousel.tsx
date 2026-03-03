@@ -3,16 +3,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-
+import Image from 'next/image';
 const mockNFTs = [
-    { title: "Ghost", author: "@Punk@8FA", bid: "49.6 ETH", img: "👻", color: "#00fff2" },
-    { title: "Eye Hive", author: "@Art-X", bid: "65.4 ETH", img: "💀", color: "#bd00ff" },
-    { title: "Don Miguelo", author: "@Art.78", bid: "65.4 ETH", img: "👽", color: "#ff00bd" },
-    { title: "Reaper", author: "@Daemon", bid: "65.4 ETH", img: "☠️", color: "#00fff2" },
-    { title: "Cyber Bot", author: "@Mech", bid: "85.4 ETH", img: "🤖", color: "#bd00ff" },
+    { title: "College Notes", author: "@Punk@8FA", bid: "Free", img: "/images/nft1.png", color: "#00fff2" },
+    { title: "Career guide Pro", author: "@Art-X", bid: "65.4 INR", img: "/images/nft2.png", color: "#bd00ff" },
+    { title: "College Bunk Detector", author: "Deepak Baghel", bid: "Free", img: "/images/nft3.png", color: "#ff00bd" },
+    { title: "Speak with Ai", author: "@Daemon", bid: "65.4 INR", img: "/images/nft4.png", color: "#00fff2" },
+    { title: "E-Library", author: "@Mech", bid: "85.4 INR", img: "/images/nft5.png", color: "#bd00ff" },
 ];
 
-const Carousel = () => {
+const Carousel = () => {      
     const [activeIndex, setActiveIndex] = useState(2);
 
     const handleNext = () => {
@@ -43,18 +43,14 @@ const Carousel = () => {
                 </button>
             </div>
 
-            {/* Cards Container */}
+
+
+
             <div className="relative w-full max-w-6xl h-[500px] flex items-center justify-center perspective-[1000px]">
                 {mockNFTs.map((nft, index) => {
-                    // Calculate "distance" from center
-                    // We need activeIndex to be centered.
-                    // Let's settle on a simpler logic: render active, active-1, active+1
 
                     const offset = (index - activeIndex);
-                    // Handle wrap-around for simpler visual logic if needed, but for 5 items, straightforward index diff works if we constrain or mod. 
-                    // Actually, let's just do a transformative map based on offset.
 
-                    // Simple infinite loop logic roughly:
                     let effectiveOffset = offset;
                     if (offset > 2) effectiveOffset -= mockNFTs.length;
                     if (offset < -2) effectiveOffset += mockNFTs.length;
@@ -93,7 +89,7 @@ const Carousel = () => {
                                         backgroundSize: "150% 150%"
                                     }}
                                 />
-                                {nft.img}
+                                <Image src={nft.img} alt="NFT" width={100} height={100} />
                             </div>
 
                             {/* Info */}
@@ -104,7 +100,7 @@ const Carousel = () => {
                                 <div className="flex justify-between items-center mt-2 p-2 bg-white/5 rounded-lg">
                                     <span className="text-cyan-400 font-bold text-sm tracking-wider">{nft.bid}</span>
                                     <button className="bg-cyan-500 hover:bg-cyan-400 text-black text-xs font-bold px-4 py-1.5 rounded transition-colors">
-                                        Place Bid
+                                        Get Apk
                                     </button>
                                 </div>
                             </div>
